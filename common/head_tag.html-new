@@ -38,7 +38,7 @@ api.registerConnectorClass('below-site-header', 'experts-homepage', {
                     $('.below-site-header-outlet.experts-homepage').addClass("hidden");
                     component.set('displayCustomHomepage', false);
                 });
-                ajax("/c/cmo-accelerator/12.json").then (function(result){
+                ajax("/c/3.json").then (function(result){
                     topicListOne = [];
                     var usersOne = result.users;
                     result.topic_list.topics.slice(0,5).forEach(function(topic){
@@ -49,7 +49,7 @@ api.registerConnectorClass('below-site-header', 'experts-homepage', {
                     });
                     component.set('topicListOne', topicListOne);
                 });
-                ajax("/c/live-training/11.json").then (function(result){
+                ajax("/c/2.json").then (function(result){
                     topicListTwo = [];
                     var usersTwo = result.users;
                     result.topic_list.topics.slice(0,5).forEach(function(topic){
@@ -121,22 +121,22 @@ api.registerConnectorClass('below-site-header', 'experts-homepage', {
             <div class="wrap">
                 <div class="box box-2">
                     <div class="header-wrapper">
-                        <h3 class="inline">CMO Accelerator</h3>
-                       {{#d-button action="createChallenge" class="btn-primary btn right"}}POST{{/d-button}}
+                        <h3 class="inline">Topic List One</h3>
+                        {{#d-button action="createChallenge" class="btn-primary btn right"}}POST{{/d-button}}
                     </div>
                     {{topic-list topics=topicListOne showPosters=true}}
                     {{#if site.mobileView}}
-                        <a href="/tags/accelerator" class="btn-primary btn full-width">MORE</a>
+                        <a href="/tags/challenges" class="btn-primary btn full-width">MORE</a>
                     {{/if}}
                 </div>
                 <div class="box box-2">
                     <div class="header-wrapper">
-                        <h3 class="inline">Upcoming Events</h3>
+                        <h3 class="inline">TopicListTwo</h3>
                         {{#d-button action="createLink" class="btn-primary btn right"}}SHARE LINK{{/d-button}}
                     </div>
                     {{topic-list topics=topicListTwo showPosters=true}}
                     {{#if site.mobileView}}
-                        <a href="/c/live-training/11" class="btn-primary btn full-width">MORE</a>
+                        <a href="/tags/reading" class="btn-primary btn full-width">MORE</a>
                     {{/if}}
                 </div>
             </div>
@@ -153,13 +153,13 @@ api.registerConnectorClass('below-site-header', 'experts-homepage', {
         </div>
         <div class="container engagement-boxes center">
             <div class="wrap">
-                <h2>Quick Links</h2>
+                <h2>Engagement Boxes</h2>
                 <div class="box box-4">
                     <a href="/">
                         <div class="icon-wrapper">
-                            
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72"><defs><style>.cls-1{fill:none;stroke:#f29d33;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;}</style></defs><title>Training_y</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><ellipse class="cls-1" cx="36" cy="13.48" rx="12.21" ry="12.47"/></g></g></svg>
                         </div>
-                        <span>New Member Introductions</span>
+                        <span>Box One</span>
                     </a>
                 </div>
                 <div class="box box-4">
@@ -167,7 +167,7 @@ api.registerConnectorClass('below-site-header', 'experts-homepage', {
                         <div class="icon-wrapper">
 
                         </div>
-                        <span>Tools</span>
+                        <span>Box 2</span>
                     </a>
                 </div>
                 <div class="box box-4">
@@ -175,7 +175,7 @@ api.registerConnectorClass('below-site-header', 'experts-homepage', {
                         <div class="icon-wrapper">
 
                         </div>
-                        <span>Marketing Campaigns</span>
+                        <span>Box 3</span>
                     </a>
                 </div>
                 <div class="box box-4">
@@ -183,7 +183,7 @@ api.registerConnectorClass('below-site-header', 'experts-homepage', {
                         <div class="icon-wrapper">
 
                         </div>
-                        <span>Alumni</span>
+                        <span>Box 4</span>
                     </a>
                 </div>
             </div>
