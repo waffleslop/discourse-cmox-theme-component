@@ -49,7 +49,7 @@ api.registerConnectorClass('below-site-header', 'experts-homepage', {
                     });
                     component.set('topicListOne', topicListOne);
                 });
-                ajax("/c/live-training/11.json").then (function(result){
+                ajax("/c/growth-sessions/30.json").then (function(result){
                     topicListTwo = [];
                     var usersTwo = result.users;
                     result.topic_list.topics.slice(0,5).forEach(function(topic){
@@ -93,13 +93,13 @@ api.registerConnectorClass('below-site-header', 'experts-homepage', {
 
     {{#if collapseHomepage}}
                         {{#if homeToDo_0}}
-                            <h3 id="cover_subtitle_whatnext">Study the CMO Accelerator and build your Functional Marketing Strategy. Lean on other students and ask Casey your questions LIVE.</h3>
+                            <h3 id="cover_subtitle_whatnext">Study the CMO Accelerator and build your Functional Marketing® Strategy. Lean on other students and ask Casey your questions LIVE.</h3>
                         {{else}}
-                            <h3 id="cover_subtitle_whatnext">Study the CMO Accelerator and build your Functional Marketing Strategy. Lean on other students and ask Casey your questions LIVE.</h3>
+                            <h3 id="cover_subtitle_whatnext">Study the CMO Accelerator and build your Functional Marketing® Strategy. Lean on other students and ask Casey your questions LIVE.</h3>
                         {{/if}}
     {{else}}
-                        <h1 id="cover_title">Build a Functional Marketing Strategy and Get the Rewards</h1>
-                        <h2 id="cover_subtitle">Study the CMO Accelerator and build your Functional Marketing Strategy. Lean on other students and ask Casey your questions LIVE.</h2>
+                        <h1 id="cover_title">Build a Functional Marketing® Strategy and Get the Rewards</h1>
+                        <h2 id="cover_subtitle">Build a Functional Marketing® Strategy and Get the Rewards</h2>
     {{/if}}
                     </div>
                 </div>
@@ -126,7 +126,7 @@ api.registerConnectorClass('below-site-header', 'experts-homepage', {
                     </div>
                     {{topic-list topics=topicListOne showPosters=true}}
                     {{#if site.mobileView}}
-                        <a href="/tags/accelerator" class="btn-primary btn full-width">See All</a>
+                        <a href="/tag/accelerator" class="btn-primary btn full-width">See All</a>
                     {{/if}}
                 </div>
                 <div class="box box-2">
@@ -136,7 +136,7 @@ api.registerConnectorClass('below-site-header', 'experts-homepage', {
                     </div>
                     {{topic-list topics=topicListTwo showPosters=true}}
                     {{#if site.mobileView}}
-                        <a href="/c/live-training/11" class="btn-primary btn full-width">See All</a>
+                        <a href="/c/growth-sessions/30" class="btn-primary btn full-width">See All</a>
                     {{/if}}
                 </div>
             </div>
