@@ -49,7 +49,7 @@ api.registerConnectorClass('below-site-header', 'experts-homepage', {
                     });
                     component.set('topicListOne', topicListOne);
                 });
-                ajax("/c/growth-sessions/30.json").then (function(result){
+                ajax("/c/growth-sessions/11.json").then (function(result){
                     topicListTwo = [];
                     var usersTwo = result.users;
                     result.topic_list.topics.slice(0,5).forEach(function(topic){
