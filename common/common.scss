@@ -216,7 +216,7 @@
             padding: 20px;
         }
         .box-2{
-            width: calc(50% - 63px) !important;
+            width: calc(50% - 63px); /* !important; */
             margin: 0px 10px;
         }
         .box-4{
