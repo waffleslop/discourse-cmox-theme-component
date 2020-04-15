@@ -8,7 +8,7 @@
   "minimum_discourse_version": null,
   "maximum_discourse_version": null,
   "assets": {
-    "header-bg": "assets/big-header.jpeg",
+    "header-bg": "assets/header-bg.jpeg",
     "header": "assets/header.jpeg"
   },
   "color_schemes": {
