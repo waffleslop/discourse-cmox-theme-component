@@ -49,7 +49,7 @@ api.registerConnectorClass('below-site-header', 'experts-homepage', {
                     });
                     component.set('topicListOne', topicListOne);
                 });
-                ajax("/c/2.json").then (function(result){
+                ajax("/c/live-training/11.json").then (function(result){
                     topicListTwo = [];
                     var usersTwo = result.users;
                     result.topic_list.topics.slice(0,5).forEach(function(topic){
@@ -136,7 +136,7 @@ api.registerConnectorClass('below-site-header', 'experts-homepage', {
                     </div>
                     {{topic-list topics=topicListTwo showPosters=true}}
                     {{#if site.mobileView}}
-                        <a href="/tags/events" class="btn-primary btn full-width">MORE</a>
+                        <a href="/c/live-training/11" class="btn-primary btn full-width">MORE</a>
                     {{/if}}
                 </div>
             </div>
