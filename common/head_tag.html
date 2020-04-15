@@ -38,7 +38,7 @@ api.registerConnectorClass('below-site-header', 'experts-homepage', {
                     $('.below-site-header-outlet.experts-homepage').addClass("hidden");
                     component.set('displayCustomHomepage', false);
                 });
-                ajax("/c/3.json").then (function(result){
+                ajax("/c/cmo-accelerator/12.json").then (function(result){
                     topicListOne = [];
                     var usersOne = result.users;
                     result.topic_list.topics.slice(0,5).forEach(function(topic){
